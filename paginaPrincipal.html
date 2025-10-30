@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PICCOLA</title>
+    <link rel="icon" href="/IMAGENES/logoEmpresa.png">
+    <link rel="stylesheet" href="/CSS/estilopaginaPrincipal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Agregar Font Awesome para los íconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<!-- Asegúrate de que el archivo CSS se llama correctamente -->
+</head>
+<body>
+    <header>
+        <h1>Restaurante Piccola</h1>
+    </header>
+    <nav class="BarraNavegacion">
+        <ul class="menu">
+            <li><a class="registroCliente" href="/HTML/registroCliente.html">Registro Clientes</a></li>
+            <li><a class="registroPedidos" href="/HTML/registroPedidos.html">Registro Pedidos</a></li>
+            <li><a class="cartaPlatos" href="/HTML/cartaPlatos.html">Carta de Platos</a></li>
+            <li><a href="/HTML/login.html">Inicio de Sesión Clientes Exclusivos</a></li>
+        </ul>
+    </nav>
+    <script src="../js/menuResponsivo.js"></script>
+    <section id="AcercaEmpresa">
+      <h2>Acerca de Piccola</h2>
+      <p align="center">Nuestra empresa se especializa en preprarar las mejores hamburguesas y salchipapas, otorgando
+        al cliente un experiencia extraordinaria de sabor, además de una variedad de platos para la 
+        eleccion de nuestros clientes. Adicionalmente proporcionamos un excelente servicio de atencion
+        al cliente para que su experiencia sea agradable en nuestro local 
+      </p>
+      <h2>Misión de Piccola</h2>
+      <p>Ofrecer a nuestros clientes hamburguesas artesanales de la más alta calidad, preparadas con ingredientes frescos y locales, 
+        a nuestros clientes. Nos enfocamos en ofrecer una experiencia gastronómica singular en un entorno acogedor 
+        y con un servicio amable y rápido, satisfaciendo los gustos y preferencias de nuestra comunidad en Ica.</p>
+      <h2>Visión de Piccola</h2>
+      <p>Es importante destacar nuestro compromiso con la calidad, la innovación culinaria y el respeto por el entorno local. 
+        Nos esforzamos por expandirnos, manteniendo siempre nuestros valores de excelencia en el servicio y en el sabor, 
+        con el objetivo de fomentar nuestra pasión por las hamburguesas a más personas en la región Ica.</p>
+    </section>
+        <section id="UbicacióndelLocal">
+            <table>
+                <tr>
+                    <td colspan="2"><h2>Dirección del Local</h2></td>
+                </tr>
+                <tr>
+                    <td>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d483.7692070258087!2d-75.73360559809635!3d-14.068102268340525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110e295a3b07447%3A0xcf3e6b59a1ad04f7!2sParque%20Victor%20Raul%2C%20Duraznos%2C%20Ica%2011001!5e0!3m2!1ses!2spe!4v1725339494468!5m2!1ses!2spe" 
+                        allowfullscreen="" loading="lazy"></iframe>
+                    </td>
+                    <td>
+                        <p>Encuéntranos cerca del Parque Victor Raul en la Urbanización San Luis donde podrás disfrutar de un ambiente agradable
+                            para poder consumir nuestros platos exqusitios junto a la familia y amigos
+                        </p>
+                        <img src="../IMAGENES/PARQUE VICTOR RAUL.jpg" alt="imagenReferencial">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><h2><marquee behavior="alternate">¡Encuéntranos Aquí!</marquee></h2></td>
+                </tr>
+            </table>
+        </section>
+        <h2 class="productos-title">Productos Populares</h2>
+        <section id="productosPopulares">
+            <div class="slider">
+                <div id="carousel"></div>
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+            <script src="/js/productospopulares.js"></script>
+        </section>
+        <div class="contenedorBoton">
+            <h2>CONOCE MÁS DE ESTOS DELICOSOS PLATILLOS EN NUESTRA CARTA DE PLATOS</h2> 
+        <button class="IrCartaPlatos" type="button" onclick="window.location.href='../HTML/cartaPlatos.html'">"Visita nuestra Carta de Platos" <i class="fas fa-hamburger"></i></button>
+        </div>
+    <footer class="piePiccolaPaginaPrincipal">
+        <table>
+            <tr>
+                <th>
+                    <a href="https://www.facebook.com/">
+                        <img src="../IMAGENES/logo-facebookpng-32242.png" alt="Facebook">
+                    </a>
+                </th>
+                <th>
+                    <a href="../IMAGENES/logo-whatsapp-verde-icone-ios-android-1024.png">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.TwESrblIhpd2D8XG5VDz5QHaHa&pid=Api&P=0&h=180" alt="WhatsApp">
+                    </a>
+                </th>
+            </tr>
+        </table>
+        &copy; Piccola Derechos Reservados
+    </footer>
+</body>
+</html>
